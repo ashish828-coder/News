@@ -1,9 +1,9 @@
 import os
 import requests
 
-NEWS_API_KEY = os.environ["NEWS_API_KEY"]
+NEWS_API_KEY = os.environ.get["NEWS_API_KEY"]
 #NEWS_API_KEY = ""
-SLACK_WEBHOOK_URL = os.environ["SLACK_WEBHOOK_URL"]
+SLACK_WEBHOOK_URL = os.environ.get["SLACK_WEBHOOK_URL"]
 #SLACK_WEBHOOK_URL = ""
 
 COUNTRY = os.environ.get("COUNTRY", "us")   # 'in' = India
